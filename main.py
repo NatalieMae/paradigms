@@ -39,24 +39,25 @@ class Podracers:
         return f"{self.name}, Max Speeds: {self.max_speed}, Condition of car: {self.condition_of_car}, Price: {self.__price} "
 
 class repair(Podracers):
-    def __init__(self, name, max_speed, condition_of_car, price):
+    def __init__(self, condition_of_car):
+        fixed.condition_of_car = condition_of_car
         if condition_of_car is "trashed":
-            print("repaired")
-
-    # if Podracers is "trashed":
-    #     print('repaired')
+                print("repaired")
+        else:
+                print("Awwww Damn it's not done yet!")
+fixed = "repaired"
 
 pod1 = Podracers("Pod1:", 250, 'repaired', 100000)
 pod2 = Podracers("Pod2:", 300, 'perfect', 200000)    
 pod3 = Podracers("Pod3:", 200, 'trashed', 50000)
-# class AnakinsPods(Podracers):
-#     def __init__(self, max_speed, condition_of_car, price):
-#         super().__init__(max_speed, condition_of_car, price)
+class AnakinsPods(Podracers):
+    def __init__(self, name, max_speed, condition_of_car, price):
+        super().__init__(name, max_speed, condition_of_car, price)
 
-#     def __repr__(self):
-#         return f"Max Speeds: {self.max_speed}, Condition of car: {self.condition_of_car}, Price: {self.__price} "
+    def __repr__(self):
+        return f"Max Speeds: {self.max_speed}, Condition of car: {self.condition_of_car}, Price: {self.__price} "
         
 print(pod1)
 print(pod2) 
 print(pod3)
-print(repair)
+print(fixed.replace("trashed", "repaired"))
