@@ -61,3 +61,10 @@ print(pod1)
 print(pod2) 
 print(pod3)
 print(fixed.replace("trashed", "repaired"))
+
+#Yes I believe its encapsulated. I think i got abstract covered,,, maybe. 
+#I don't believe I used inheritance in this. Parent and child classes are still confusing for me. I get what it means on paper but implamentation is another thing. Poly falls inline with inheritance so I don't know if I used it. I know the answer is not complete but It kinda works. 
+
+# I am unsure if a different coding style would be better. It all depends on what the programmer likes using for coding front end or back end. I like python so for me python is working best. 
+
+#OOP helped me to organize my thoughs a little better and see the pattern 
